@@ -1,22 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from "react";
+import GlobalStyle from "../components/GlobalStyled";
+import Nav from "../components/Navigation/Navigation";
+import HeaderBox from '../components/Header/Header';
+import HamburgerMenu from "../components/containers/Hamburger";
+import NightSkyBox from "../components/NightSky/NightSkySection";
+import StartTutorial from "../components/TutorialSection/TutorialSection";
+import AstronautsDialogue from "../components/AstronautsArticles/AstronautArticles";
+import LearnBox from "../components/Learn/Learn";
+import Footer from "../components/Footer/FooterPage";
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  <div>
+    <GlobalStyle/>
+    <Nav/>
+    <HamburgerMenu/>
+    <HeaderBox/>
+    <NightSkyBox/>
+    <StartTutorial/>
+    <AstronautsDialogue/>
+    <LearnBox/>
+    <Footer/>
+  </div>
 )
-
-export default IndexPage
+export default IndexPage;
